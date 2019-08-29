@@ -1,0 +1,389 @@
+
+
+
+    <div class="container-fluid headpanel nopadding">
+
+        <div class="col-md-12 navbarhead nopadding">
+            <div class="container ">
+                <div class="row">
+                    <nav class="navbar">
+                      <div class="container-fluid">
+                        <a class="" href="#"><img class="navsidebarlogo" src="assets/images/logov2.png"></a>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span> 
+                            </button>
+
+
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav mainmenutitle"> 
+                              <li class="active"><a href="index.html">首頁</a></li>
+                              <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="homework.html">佈置作業
+                                    <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                      <li class=""><a href="syncjob.html">同步作業</a></li>
+                                      <li class=""><a href="#">寒假作業</a></li>
+                                      <li class=""><a href="summerhw.html">暑期作業</a></li>
+                                  </ul>
+                              </li>
+
+                              <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="arrangementqs-lesson.html">佈置試題
+                                    <span class="caret"></span></a>
+                                    <ul class="dropdown-menu"> 
+                                        <li class=""><a href="arrangementqs-lesson.html">課節挑題</a></li>
+                                        <li class=""><a href="arrangementqs-knowpoint.html">知識點挑題</a></li>
+                                        <li class=""><a href="arrangementqs-smartqs.html">智能挑題</a></li>
+                                        <li class=""><a href="arrangementqs-papercenter.html">試卷中心</a></li>
+                                        <li class=""><a href="arrangementqs-selectbasket.html">選題記錄</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="heroboard_exercisecompetition.html">英雄榜
+                                        <span class="caret"></span></a>    
+                                        <ul class="dropdown-menu"> 
+                                            <li class=""><a href="heroboard_exercisecompetition.html">同步作業榜</a></li>
+                                            <li class=""><a href="heroboard_exam.html">應試榜</a></li>
+                                            <li class=""><a href="heroboard_holidaycompet.html">暑期作業榜</a></li>
+                                            <li class=""><a href="heroboard_world.html">世界榜</a></li>
+                                            <li class=""><a href="#">校際榜</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class=""><a href="classmanagement.html">班級管理</a></li>
+
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="studsituations_jobrecodefeed.html">學生情況
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class=""><a href="studsituations_jobrecodefeed.html">作業記錄與反饋</a></li>
+                                            <li class=""><a href="#">試卷記錄與反饋</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class=""><a href="#">上載題目</a></li>
+                                    <li class=""><a href="recommend_list.html">推薦名單</a></li>
+
+                                </ul>
+                                
+                                <ul class="navbar-right usernavs">
+                                    <li>
+                                        <a href="#" class="translatebtn">
+                                            <img src="assets/images/translatebtn.png">
+                                        </a>
+                                    </li>
+
+
+                                    <!-- <li>
+                                        <h1>{{}}</h1>
+                                    </li> -->
+
+
+                                    <div *ngIf = "this.username">
+                                    <li>
+                                        <a href="user_setting.html" class="userbtn" [routerLink]="['/login']">
+                                           
+                                            <img src="assets/images/usericon%201.png" >
+
+                                        </a>
+                                    </li>
+
+                                    <li class="textli">
+
+                                        <div>
+                                            <!-- <a href="#" class="textbtn">
+                                                落崖驚風
+                                            </a> -->
+                                            <h4>{{this.username}}</h4>
+                                        </div>
+
+                                        <div class=" ">
+                                                <a class="nav-item nav-link" (click)="logout()">
+                                              logout  登出
+                                            </a>
+                                        </div>
+                                    </li> 
+
+                                </div>
+
+                                <div *ngIf = "!this.username">
+                                        <a class="userbtn" [routerLink]="['/login']">
+                                            Login
+                                            </a>
+
+                                </div>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mainbar nopadding" >
+
+            <div id="bodycontent" class="col-md-12 nopadding">
+                
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <a href="#">
+                                <img src="assets/images/banner1.jpg" alt="Slider1">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="assets/images/banner1.jpg" alt="Slider2">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="assets/images/banner1.jpg" alt="Slider3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 soundonbar iconadjust">
+                    
+                    <div class="col-md-7">
+                        <img src="assets/images/soundon.png">
+                        <span>
+                            最新消息：第16屆國際資優解難大賽獲獎名單公佈了…
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="container nopadding">
+                    <div class="paperMixed col-md-12 nopadding">
+                       
+                        <div id="home_firstbar" class="col-md-9 nopadding boxedborder"> 
+                            <div class="col-md-12 nopadding">
+                                <h3 class="heading_title iconadjust">
+                                    <img class="iconsize25" src="assets/images/editpencil.png">
+                                    老師佈置
+                                </h3>
+                                <!--<img class="headbottomborder" src="images/headbottomborder.png">-->
+                            </div> 
+                            <div class="col-md-4 boxpro">
+                                <a href="#">
+                                    <img src="assets/images/block1img1.jpg">
+                                    <h4 class="center">
+                                        同步作業
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="col-md-4 boxpro">
+                                <a href="#">
+                                    <img src="assets/images/block1img2.jpg">
+                                    <h4 class="center">
+                                        應試題目
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="col-md-4 boxpro">
+                                <a href="#">
+                                    <img src="assets/images/block1img3.jpg">
+                                    <h4 class="center">
+                                        暑期作業 
+                                    </h4>
+                                </a>
+                            </div>  
+                        </div>
+
+                        <div id="home_secondbar" class="col-md-3 mrg_l_5 rightpadding boxedborder paperChild ">
+                            
+                            <div class="col-md-12 nopadding">
+                                <h3 class="heading_title iconadjust">
+                                    <img class="iconsize25" src="assets/images/rankicon.png">
+                                    英雄榜
+                                </h3>
+                            </div>
+
+                            <div class="col-md-12 middle-container middle-bottom">
+                                
+                                <div class="row middle-box chart-top">
+                                    <div class="col-sm-6 col-md-6 h_varyp stretch_padding" >
+                                        <div class="cyan-chart-box chart-box">
+                                            <p class="text-center mb-0 white">同步作業榜</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6 h_varyp stretch_padding">                 
+                                        <div class="blue-chart-box chart-box">
+                                            <p class="text-center mb-0 white">應試榜</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row middle-box chart-middle">
+                                    <div class="col-sm-12 col-md-12 h_100p stretch_padding">
+                                        <div class="yellow-chart-box chart-box">
+                                            <p class="text-center mb-0 white">暑期作業榜</p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <div class="row middle-box chart-bottom">
+                                    <div class="col-sm-6 col-md-6 h_varyp stretch_padding">
+                                        <div class="green-chart-box chart-box">
+                                            <p class="chart-text text-center mb-0 white">世界榜</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6 h_varyp stretch_padding"> 
+                                        <div class="pink-chart-box chart-box">
+                                            <p class="text-center mb-0 white">校際榜</p>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div> 
+                    </div>
+
+                    <div class="paperMixed col-md-12 nopadding"> 
+                        <div class="col-md-9 nopadding">
+                            <div class="col-md-12 boxedborder">
+                                <div class="col-md-12 nopadding">
+                                    <h3 class="heading_title iconadjust">
+                                        <img src="assets/images/papercharts.png">
+                                        學生情況
+                                    </h3>
+                                    <!--<img class="headbottomborder" src="images/headbottomborder.png">-->
+                                </div>
+                                <div class="col-md-12">
+                                    <ul class="block2ulli">
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/block2img1.png">
+                                                <!-- <h4 class="center">
+                                                    同步
+                                                    作業賽
+                                                </h4> -->
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/block2img2.png">
+                                                <!-- <h4 class="center">
+                                                    應試賽
+                                                </h4> -->
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/block2img3.png">
+                                                <!-- <h4 class="center">
+                                                    暑期
+                                                    作業賽
+                                                </h4> -->
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/block2img4.png">
+                                                <!-- <h4 class="center">
+                                                    世界賽
+                                                </h4> -->
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/block2img5.png">
+                                                <!-- <h4 class="center">
+                                                    校際賽
+                                                </h4> -->
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mrg_l_5 rightpadding boxedborder paperChild">
+                            
+                            <div class="col-md-12 nopadding">
+                                <!-- <h3 class="heading_title iconadjust">
+                                    <img class="iconsize25" src="assets/images/classicon.png">
+                                    班級管理
+                                </h3> -->
+                            </div>
+                            
+                            <div class="col-md-12 mrg_t_20 homeworkbanners nopadding ">
+                                <div class="col-md-12 center nopadding h_100p">
+                                    <a href="#">
+                                        <img src="assets/images/home_class_btn2.png">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-12 center nopadding h_100p">
+                                    <a href="#">
+                                        <img src="assets/images/home_class_btn1.png">
+                                    </a>
+                                    <div class="col-md-5 class_more_description">
+                                        <!-- <a href="#" style="color:#ffea00">
+                                            格式說明>>
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<footer>
+    <div class="footer-inner">
+        
+        <!-- <div class="col-md-12 footer-content">
+            <ul class="footer-row-1">
+                <li class=""><a href="index.html">首頁</a></li>
+                <li class=""><a href="index.html">關於我們</a></li>
+                <li class=""><a href="index.html">網站使用條款</a></li>
+                <li class=""><a href="index.html">聯絡我們</a></li>
+                <li class=""><a href="index.html">私隱政策聲明</a></li>
+            </ul>
+        </div> -->
+
+        <div class="col-md-12 footer-content " style="display: flex;">
+            <div class="col-md-12 solid_border">
+            </div>
+        </div>
+
+        <div class="col-md-12 footer-content">
+            <!-- <span class="bigger-120">
+                &copy;英雄地 &commat;國際教育科技學會 2019. TRANSCEND THEME BY CPOTHEMES.
+            </span> -->
+        </div>
+    </div>
+</footer>
+
+
+
